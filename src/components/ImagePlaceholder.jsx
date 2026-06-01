@@ -23,7 +23,7 @@ export default function ImagePlaceholder({ type = 'hero', height = '100%', title
 
   if (type === 'hero') {
     useImgSrc = heroImg;
-  } else if (type === 'why' || type === 'about' || type === 'clinic') {
+  } else if (type === 'why' || type === 'about' || type === 'clinic' || type === 'clinic_interior' || type === 'clinic-interior') {
     useImgSrc = clinicImg;
   } else if (type === 'claire') {
     useImgSrc = claireImg;
@@ -79,13 +79,13 @@ export default function ImagePlaceholder({ type = 'hero', height = '100%', title
         <div style={{ fontSize: '9px', textTransform: 'uppercase', letterSpacing: '0.2em', opacity: 0.8, marginTop: '4px' }}>Clinical Oversight Doctor</div>
       </div>
     );
-  } else if (type === 'anti-wrinkle') {
+  } else if (type === 'anti-wrinkle' || type === 'anti_wrinkle') {
     useImgSrc = antiWrinkleImg;
-  } else if (type === 'lip-fillers') {
+  } else if (type === 'lip-fillers' || type === 'lip_fillers') {
     useImgSrc = lipFillersImg;
-  } else if (type === 'dermal-fillers') {
+  } else if (type === 'dermal-fillers' || type === 'dermal_fillers') {
     useImgSrc = dermalFillersImg;
-  } else if (type === 'skin-boosters') {
+  } else if (type === 'skin-boosters' || type === 'skin_boosters') {
     useImgSrc = skinBoostersImg;
   } else if (type === 'microneedling') {
     useImgSrc = microneedlingImg;

@@ -1330,3 +1330,228 @@ textarea.form-control {
   }
 }
 
+/* Design Matching Classes */
+.showcase-5col {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.showcase-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid rgba(138, 112, 96, 0.08);
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition);
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.showcase-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.showcase-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.showcase-card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.showcase-card-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--kesho-brown);
+  margin-bottom: 12px;
+}
+
+.showcase-card-desc {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: rgba(46, 36, 28, 0.75);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.showcase-card-arrow {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  color: var(--kesho-sand);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.showcase-card:hover .showcase-card-arrow {
+  transform: translateX(4px);
+  color: var(--kesho-brown);
+}
+
+/* Custom Journal styles */
+.journal-grid-custom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.journal-card-custom {
+  display: flex;
+  background: var(--white);
+  border: 1px solid rgba(138, 112, 96, 0.08);
+  box-shadow: var(--shadow-subtle);
+  overflow: hidden;
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.journal-card-custom:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.journal-card-img-wrap {
+  width: 140px;
+  height: 100%;
+  min-height: 140px;
+  flex-shrink: 0;
+}
+
+.journal-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.journal-card-meta {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--kesho-sand);
+  margin-bottom: 8px;
+}
+
+.journal-card-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--kesho-brown);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.journal-card-link {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--kesho-brown);
+  border-bottom: 1px solid var(--kesho-beige);
+  align-self: flex-start;
+  padding-bottom: 2px;
+}
+
+/* Pre-footer Banner */
+.pre-footer-banner {
+  background-color: var(--kesho-subtle);
+  padding: 60px 0;
+  border-top: 1px solid rgba(138, 112, 96, 0.1);
+  border-bottom: 1px solid rgba(138, 112, 96, 0.1);
+}
+
+.pre-footer-banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Testimonial slider */
+.testimonial-slider-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 60px;
+}
+
+.testimonial-quote {
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1.45;
+  color: var(--kesho-brown);
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+.testimonial-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(61, 46, 34, 0.2);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--kesho-brown);
+}
+
+.testimonial-nav-btn:hover {
+  background: var(--kesho-sand);
+  border-color: var(--kesho-sand);
+  color: var(--white);
+}
+
+@media (max-width: 1024px) {
+  .showcase-5col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase-5col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .journal-grid-custom {
+    grid-template-columns: 1fr;
+  }
+  .journal-card-custom {
+    flex-direction: column;
+  }
+  .journal-card-img-wrap {
+    width: 100%;
+    height: 180px;
+  }
+  .pre-footer-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonial-slider-container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-5col {
+    grid-template-columns: 1fr;
+  }
+}
+
+
