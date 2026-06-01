@@ -65,7 +65,7 @@ export default function About() {
       {/* 2. Our Story Section */}
       <section style={{ padding: '100px 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-asymmetric" style={{ alignItems: 'center' }}>
             <div>
               <span className="section-tag">Our Vision</span>
               <h2 style={{ marginBottom: '24px' }}>Why we built KESHO.</h2>
@@ -93,7 +93,7 @@ export default function About() {
             <span className="section-tag">Core Principles</span>
             <h2>Our Ethos</h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }}>
+          <div className="grid-3col">
             {ethosItems.map((item, idx) => (
               <div key={idx} style={{ background: 'var(--white)', padding: '40px', border: '1px solid rgba(138, 112, 96, 0.08)', borderRadius: '2px', textAlign: 'center' }}>
                 <div style={{ color: 'var(--kesho-sand)', marginBottom: '24px', display: 'inline-block' }}>
@@ -138,7 +138,7 @@ export default function About() {
       {/* 5. Premises Section */}
       <section style={{ backgroundColor: 'var(--kesho-subtle)', padding: '100px 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-asymmetric" style={{ alignItems: 'center' }}>
             <div>
               <span className="section-tag">THE CLINIC</span>
               <h2>Our Finchley clinic.</h2>
@@ -149,7 +149,7 @@ export default function About() {
                 Located a short 8-minute walk from Finchley Central station, with easy transport links and street parking available.
               </p>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            <div className="grid-2col" style={{ gap: '16px' }}>
               <div style={{ height: '160px', overflow: 'hidden', borderRadius: '2px' }}>
                 <ImagePlaceholder type="clinic" height="100%" />
               </div>

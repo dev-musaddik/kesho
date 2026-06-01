@@ -1269,3 +1269,64 @@ textarea.form-control {
   border-radius: 50%;
   background: var(--kesho-sand);
 }
+
+/* Responsive Layout Utilities */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.grid-4col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.grid-asymmetric {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+}
+
+.grid-asymmetric-rev {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 64px;
+}
+
+@media (max-width: 991px) {
+  .grid-2col, .grid-3col, .grid-4col, .grid-asymmetric, .grid-asymmetric-rev {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  /* Text scales down gracefully on small screens */
+  h1 {
+    font-size: clamp(34px, 7.5vw, 44px) !important;
+  }
+  h2 {
+    font-size: clamp(26px, 5.5vw, 32px) !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .calendar-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+  }
+}
+

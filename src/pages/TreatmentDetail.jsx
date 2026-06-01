@@ -53,7 +53,7 @@ export default function TreatmentDetail() {
       {/* 2. What It Is Section */}
       <section style={{ padding: '100px 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-asymmetric" style={{ alignItems: 'center' }}>
             <div>
               <span className="section-tag">Overview</span>
               <h2 style={{ marginBottom: '24px' }}>What is {treatment.title}?</h2>
@@ -85,7 +85,7 @@ export default function TreatmentDetail() {
             <h2>Who it is for.</h2>
             <p style={{ opacity: 0.8 }}>We customize every treatment plan, but this procedure is typically ideal for:</p>
           </div>
-          <div style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+          <div className="grid-2col" style={{ maxWidth: '900px', margin: '0 auto', gap: '32px' }}>
             {treatment.whoItIsFor.map((item, idx) => (
               <div key={idx} style={{ display: 'flex', gap: '16px', background: 'var(--white)', padding: '28px', border: '1px solid rgba(138, 112, 96, 0.08)', borderRadius: '2px' }}>
                 <div style={{ color: 'var(--kesho-sand)', flexShrink: 0 }}>
@@ -166,7 +166,7 @@ export default function TreatmentDetail() {
             <p style={{ opacity: 0.8 }}>Follow these simple rules to ensure optimal settling, prevent infection, and maximize your results.</p>
           </div>
           
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', maxWidth: '1000px', margin: '0 auto' }}>
+          <div className="grid-2col" style={{ gap: '48px', maxWidth: '1000px', margin: '0 auto' }}>
             {/* Dos */}
             <div style={{ border: '1px solid rgba(138, 112, 96, 0.1)', padding: '40px', background: 'var(--white)' }}>
               <h3 style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--kesho-brown)', borderBottom: '1px solid var(--light-gray)', paddingBottom: '16px', marginBottom: '24px' }}>

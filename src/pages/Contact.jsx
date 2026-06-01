@@ -62,7 +62,7 @@ export default function Contact() {
       {/* 2. NAP Block + Form */}
       <section style={{ padding: '100px 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '64px', alignItems: 'flex-start' }}>
+          <div className="grid-asymmetric-rev" style={{ alignItems: 'flex-start' }}>
             
             {/* Left Column: Contact details & Hours */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
@@ -252,7 +252,7 @@ export default function Contact() {
             <h2>How to find us.</h2>
           </div>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px', maxWidth: '1000px', margin: '0 auto' }}>
+          <div className="grid-3col" style={{ maxWidth: '1000px', margin: '0 auto' }}>
             {/* Tube */}
             <div style={{ background: 'var(--white)', padding: '32px', border: '1px solid rgba(138, 112, 96, 0.08)', borderRadius: '2px', textAlign: 'center' }}>
               <div style={{ color: 'var(--kesho-sand)', marginBottom: '16px' }}><Train size={24} /></div>

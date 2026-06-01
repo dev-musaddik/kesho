@@ -23,7 +23,7 @@ export default function Book() {
         </div>
 
         {/* 2-Column Content */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '64px', alignItems: 'flex-start' }}>
+        <div className="grid-asymmetric-rev" style={{ alignItems: 'flex-start' }}>
           
           {/* Left Column: Guidelines & Contact */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>

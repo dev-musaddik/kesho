@@ -94,7 +94,7 @@ export default function Home() {
       {/* 1. Hero Section */}
       <section style={{ backgroundColor: 'var(--kesho-cream)', minHeight: '80vh', display: 'flex', alignItems: 'center', padding: '80px 0 100px', borderBottom: '1px solid var(--light-gray)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-asymmetric" style={{ alignItems: 'center' }}>
             <div style={{ textAlign: 'left' }}>
               <span className="section-tag" style={{ letterSpacing: '0.4em' }}>ELEVATE YOUR BEAUTY</span>
               <h1 style={{ lineHeight: 1.1, marginBottom: '24px' }}>Timeless Confidence. Refined Results.</h1>
@@ -119,7 +119,7 @@ export default function Home() {
       {/* 3. Trust Strip Section */}
       <section style={{ padding: '100px 0', borderBottom: '1px solid var(--light-gray)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '32px' }}>
+          <div className="grid-4col" style={{ gap: '32px' }}>
             {trustItems.map((item, idx) => (
               <div key={idx} style={{ textAlign: 'center', padding: '16px' }}>
                 <div style={{ color: 'var(--kesho-sand)', marginBottom: '24px', display: 'inline-block' }}>
@@ -162,7 +162,7 @@ export default function Home() {
       {/* 5. About Teaser */}
       <section style={{ padding: '120px 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
+          <div className="grid-2col" style={{ gap: '80px', alignItems: 'center' }}>
             <div style={{ height: '440px', borderRadius: '4px', overflow: 'hidden', boxShadow: 'var(--shadow-subtle)' }}>
               <ImagePlaceholder type="about" height="100%" />
             </div>
@@ -188,7 +188,7 @@ export default function Home() {
             <span className="section-tag">WHAT OUR CLIENTS SAY</span>
             <h2>Trusted by people who care about results.</h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }}>
+          <div className="grid-3col">
             {testimonials.map((item, idx) => (
               <div key={idx} style={{ background: 'var(--white)', padding: '40px', border: '1px solid rgba(138, 112, 96, 0.08)', boxShadow: 'var(--shadow-subtle)', position: 'relative' }}>
                 <div style={{ display: 'flex', gap: '4px', color: '#d4af37', marginBottom: '20px' }}>

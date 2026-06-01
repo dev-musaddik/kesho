@@ -103,7 +103,7 @@ export default function TreatmentsHub() {
             <span className="section-tag">THE KESHO DIFFERENCE</span>
             <h2>Why our clients choose KESHO.</h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px' }}>
+          <div className="grid-3col" style={{ gap: '40px' }}>
             {/* Col 1 */}
             <div style={{ textAlign: 'center', padding: '16px' }}>
               <div style={{ color: 'var(--kesho-sand)', marginBottom: '24px', display: 'inline-block' }}>

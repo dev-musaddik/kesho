@@ -30,7 +30,7 @@ export default function PractitionerDetail() {
       {/* 1. Hero Section (2-columns) */}
       <section style={{ backgroundColor: 'var(--kesho-cream)', padding: '80px 0 60px', borderBottom: '1px solid var(--light-gray)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '64px', alignItems: 'center' }}>
+          <div className="grid-asymmetric" style={{ alignItems: 'center' }}>
             <div style={{ textAlign: 'left' }}>
               <span className="section-tag">{practitioner.role}</span>
               <h1 style={{ marginBottom: '16px', lineHeight: 1.1 }}>{practitioner.fullName}</h1>
@@ -72,7 +72,7 @@ export default function PractitionerDetail() {
       {/* 3. Credentials & Qualifications Section */}
       <section style={{ backgroundColor: 'var(--kesho-subtle)', padding: '100px 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '64px', alignItems: 'flex-start' }}>
+          <div className="grid-asymmetric" style={{ alignItems: 'flex-start' }}>
             {/* Left: Qualifications */}
             <div style={{ background: 'var(--white)', padding: '48px', border: '1px solid rgba(138, 112, 96, 0.08)', borderRadius: '2px', boxShadow: 'var(--shadow-subtle)' }}>
               <h3 style={{ display: 'flex', alignItems: 'center', gap: '12px', borderBottom: '1px solid var(--light-gray)', paddingBottom: '16px', marginBottom: '24px' }}>
