@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+
+# Block admin and internal paths
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /?s=
+Disallow: /search/
+Disallow: /thank-you/
+Disallow: /author/
+Disallow: /trackback/
+Disallow: /xmlrpc.php
+Disallow: /readme.html
+Disallow: /license.txt
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+
+# Allow ajax (required by some plugins)
+Allow: /wp-admin/admin-ajax.php
+
+# Allow CSS/JS for rendering checks
+Allow: /wp-includes/css/
+Allow: /wp-includes/js/
+Allow: /wp-content/themes/
+Allow: /wp-content/uploads/
+
+# Block AI scrapers (optional — remove the next 6 lines if you want maximum visibility in AI assistants)
+User-agent: GPTBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+
+# Sitemap
+Sitemap: https://keshopro.com/sitemap_index.xml

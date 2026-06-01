@@ -1,0 +1,300 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-05-31 00:00:00",
+  "containerVersion": {
+    "path": "accounts/REPLACE/containers/REPLACE/versions/0",
+    "accountId": "REPLACE",
+    "containerId": "REPLACE",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/REPLACE/containers/REPLACE",
+      "accountId": "REPLACE",
+      "containerId": "REPLACE",
+      "name": "keshopro.com",
+      "publicId": "GTM-REPLACE",
+      "usageContext": ["WEB"],
+      "fingerprint": "0",
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/REPLACE/containers/REPLACE/workspaces?apiLink=container",
+      "features": {
+        "supportUserPermissions": true,
+        "supportEnvironments": true,
+        "supportWorkspaces": true,
+        "supportGtagConfigs": true,
+        "supportBuiltInVariables": true,
+        "supportClients": true,
+        "supportFolders": true,
+        "supportTags": true,
+        "supportTemplates": true,
+        "supportTriggers": true,
+        "supportVariables": true,
+        "supportVersions": true,
+        "supportZones": true,
+        "supportTransformations": true
+      },
+      "tagIds": ["GTM-REPLACE"]
+    },
+    "tag": [
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "tagId": "1",
+        "name": "GA4 - Configuration",
+        "type": "googtag",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "tagId", "value": "{{GA4_MEASUREMENT_ID}}" },
+          { "type": "BOOLEAN", "key": "sendDefaultEvents", "value": "true" }
+        ],
+        "fingerprint": "0",
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": { "type": "LIST", "list": [{ "type": "TEMPLATE", "value": "analytics_storage" }] }
+        }
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "tagId": "2",
+        "name": "GA4 Event - book_consultation_click",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "book_consultation_click" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{GA4_MEASUREMENT_ID}}" }
+        ],
+        "fingerprint": "0",
+        "firingTriggerId": ["10"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": { "consentStatus": "NEEDED", "consentType": { "type": "LIST", "list": [{ "type": "TEMPLATE", "value": "analytics_storage" }] } }
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "tagId": "3",
+        "name": "GA4 Event - phone_click",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "phone_click" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{GA4_MEASUREMENT_ID}}" }
+        ],
+        "fingerprint": "0",
+        "firingTriggerId": ["11"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": { "consentStatus": "NEEDED", "consentType": { "type": "LIST", "list": [{ "type": "TEMPLATE", "value": "analytics_storage" }] } }
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "tagId": "4",
+        "name": "GA4 Event - email_click",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "email_click" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{GA4_MEASUREMENT_ID}}" }
+        ],
+        "fingerprint": "0",
+        "firingTriggerId": ["12"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": { "consentStatus": "NEEDED", "consentType": { "type": "LIST", "list": [{ "type": "TEMPLATE", "value": "analytics_storage" }] } }
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "tagId": "5",
+        "name": "GA4 Event - form_submit",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "form_submit" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{GA4_MEASUREMENT_ID}}" }
+        ],
+        "fingerprint": "0",
+        "firingTriggerId": ["13"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": { "consentStatus": "NEEDED", "consentType": { "type": "LIST", "list": [{ "type": "TEMPLATE", "value": "analytics_storage" }] } }
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "tagId": "6",
+        "name": "Meta Pixel - Base",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '{{META_PIXEL_ID}}');\nfbq('track', 'PageView');\n</script>\n<noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id={{META_PIXEL_ID}}&ev=PageView&noscript=1'/></noscript>"
+          }
+        ],
+        "fingerprint": "0",
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "ONCE_PER_LOAD",
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": { "type": "LIST", "list": [
+            { "type": "TEMPLATE", "value": "ad_storage" },
+            { "type": "TEMPLATE", "value": "ad_user_data" },
+            { "type": "TEMPLATE", "value": "ad_personalization" }
+          ]}
+        }
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "tagId": "7",
+        "name": "Meta Pixel - Lead Event",
+        "type": "html",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "html", "value": "<script>if(typeof fbq==='function'){fbq('track','Lead');}</script>" }
+        ],
+        "fingerprint": "0",
+        "firingTriggerId": ["10", "13"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": { "consentStatus": "NEEDED", "consentType": { "type": "LIST", "list": [{ "type": "TEMPLATE", "value": "ad_storage" }] } }
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "tagId": "8",
+        "name": "TikTok Pixel - Base",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n!function (w, d, t) {w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=[\"page\",\"track\",\"identify\",\"instances\",\"debug\",\"on\",\"off\",\"once\",\"ready\",\"alias\",\"group\",\"enableCookie\",\"disableCookie\",\"holdConsent\",\"revokeConsent\",\"grantConsent\"];ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};ttq.load=function(e,n){var r=\"https://analytics.tiktok.com/i18n/pixel/events.js\",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement(\"script\");n.type=\"text/javascript\",n.async=!0,n.src=r+\"?sdkid=\"+e+\"&lib=\"+t;e=document.getElementsByTagName(\"script\")[0];e.parentNode.insertBefore(n,e)};\nttq.load('{{TIKTOK_PIXEL_ID}}');\nttq.page();\n}(window, document, 'ttq');\n</script>"
+          }
+        ],
+        "fingerprint": "0",
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "ONCE_PER_LOAD",
+        "consentSettings": { "consentStatus": "NEEDED", "consentType": { "type": "LIST", "list": [{ "type": "TEMPLATE", "value": "ad_storage" }] } }
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "tagId": "9",
+        "name": "Microsoft Clarity",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script type=\"text/javascript\">\n(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, \"clarity\", \"script\", \"{{CLARITY_PROJECT_ID}}\");\n</script>"
+          }
+        ],
+        "fingerprint": "0",
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "ONCE_PER_LOAD",
+        "consentSettings": { "consentStatus": "NEEDED", "consentType": { "type": "LIST", "list": [{ "type": "TEMPLATE", "value": "analytics_storage" }] } }
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "triggerId": "10",
+        "name": "Click - Book Consultation",
+        "type": "LINK_CLICK",
+        "filter": [
+          {
+            "type": "OR",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{Click URL}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "/book" }
+            ]
+          }
+        ],
+        "autoEventFilter": [],
+        "waitForTags": { "type": "BOOLEAN", "value": "false" },
+        "checkValidation": { "type": "BOOLEAN", "value": "false" },
+        "waitForTagsTimeout": { "type": "TEMPLATE", "value": "2000" },
+        "uniqueTriggerId": { "type": "TEMPLATE", "value": "10" },
+        "fingerprint": "0"
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "triggerId": "11",
+        "name": "Click - Phone (tel:)",
+        "type": "LINK_CLICK",
+        "filter": [
+          { "type": "CONTAINS", "parameter": [{ "type": "TEMPLATE", "key": "arg0", "value": "{{Click URL}}" }, { "type": "TEMPLATE", "key": "arg1", "value": "tel:" }] }
+        ],
+        "fingerprint": "0"
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "triggerId": "12",
+        "name": "Click - Email (mailto:)",
+        "type": "LINK_CLICK",
+        "filter": [
+          { "type": "CONTAINS", "parameter": [{ "type": "TEMPLATE", "key": "arg0", "value": "{{Click URL}}" }, { "type": "TEMPLATE", "key": "arg1", "value": "mailto:" }] }
+        ],
+        "fingerprint": "0"
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "triggerId": "13",
+        "name": "Form Submit (kesho_form_submit dataLayer)",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          { "type": "EQUALS", "parameter": [{ "type": "TEMPLATE", "key": "arg0", "value": "{{_event}}" }, { "type": "TEMPLATE", "key": "arg1", "value": "kesho_form_submit" }] }
+        ],
+        "fingerprint": "0"
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "variableId": "1",
+        "name": "GA4_MEASUREMENT_ID",
+        "type": "c",
+        "parameter": [{ "type": "TEMPLATE", "key": "value", "value": "G-REPLACE" }],
+        "fingerprint": "0"
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "variableId": "2",
+        "name": "META_PIXEL_ID",
+        "type": "c",
+        "parameter": [{ "type": "TEMPLATE", "key": "value", "value": "REPLACE" }],
+        "fingerprint": "0"
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "variableId": "3",
+        "name": "TIKTOK_PIXEL_ID",
+        "type": "c",
+        "parameter": [{ "type": "TEMPLATE", "key": "value", "value": "REPLACE" }],
+        "fingerprint": "0"
+      },
+      {
+        "accountId": "REPLACE",
+        "containerId": "REPLACE",
+        "variableId": "4",
+        "name": "CLARITY_PROJECT_ID",
+        "type": "c",
+        "parameter": [{ "type": "TEMPLATE", "key": "value", "value": "REPLACE" }],
+        "fingerprint": "0"
+      }
+    ],
+    "builtInVariable": [
+      { "accountId": "REPLACE", "containerId": "REPLACE", "type": "PAGE_URL", "name": "Page URL" },
+      { "accountId": "REPLACE", "containerId": "REPLACE", "type": "PAGE_PATH", "name": "Page Path" },
+      { "accountId": "REPLACE", "containerId": "REPLACE", "type": "PAGE_HOSTNAME", "name": "Page Hostname" },
+      { "accountId": "REPLACE", "containerId": "REPLACE", "type": "REFERRER", "name": "Referrer" },
+      { "accountId": "REPLACE", "containerId": "REPLACE", "type": "EVENT", "name": "Event" },
+      { "accountId": "REPLACE", "containerId": "REPLACE", "type": "CLICK_URL", "name": "Click URL" },
+      { "accountId": "REPLACE", "containerId": "REPLACE", "type": "CLICK_TEXT", "name": "Click Text" },
+      { "accountId": "REPLACE", "containerId": "REPLACE", "type": "CLICK_ELEMENT", "name": "Click Element" },
+      { "accountId": "REPLACE", "containerId": "REPLACE", "type": "FORM_URL", "name": "Form URL" }
+    ],
+    "fingerprint": "0",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/REPLACE/containers/REPLACE/versions/0?apiLink=version"
+  }
+}
